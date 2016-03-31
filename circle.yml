@@ -1,3 +1,8 @@
+machine:
+  pre:
+    - sudo apt-get install -y python-pip
+    - ln -s /opt/circleci/.pyenv .pyenv
+
 dependencies:
   override:
     - exit 0
