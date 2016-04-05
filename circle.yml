@@ -1,6 +1,6 @@
 machine:
   environment:
-    - PYENV_ROOT: /home/ubuntu/.pyenv
+    PYENV_ROOT: /home/ubuntu/.pyenv
 
 dependencies:
   override:
