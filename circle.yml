@@ -1,7 +1,6 @@
 machine:
-  pre:
-    - sudo apt-get install -y python-pip
-    - ln -s /opt/circleci/.pyenv .pyenv
+  environment:
+    - PYENV_ROOT: /home/ubuntu/.pyenv
 
 dependencies:
   override:
