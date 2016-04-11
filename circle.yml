@@ -4,7 +4,9 @@ dependencies:
 
 test:
   override:
-    - exit 0
+    - ./simulate_codedeploy_commands.sh
+    - create_application_revision /tmp/codedeploy_applications.json /tmp/codedeploy_revisions.json
+    - create_application_deployment /tmp/codedeploy_revisions.json /tmp/codedeploy_deployments.json
 
 deployment:
   staging:
