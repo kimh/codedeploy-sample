@@ -10,7 +10,8 @@ if [ "XfunctionX" == "X$(type -t deactivate)X" ]; then deactivate; fi
 pyenv global system
 pip install https://s3.amazonaws.com/circle-support-bucket/circle-sds-support-0.8.1.tar.gz
 pyenv rehash; 
-create_application_revision
+create_application_revision /tmp/codedeploy_applications.json /tmp/codedeploy_revisions.json
+create_application_deployment /tmp/codedeploy_revisions.json /tmp/codedeploy_deployments.json
 '
 
 
