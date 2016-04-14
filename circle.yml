@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - exit 0
+    - sudo apt-get install -y python-pip
 
 test:
   override:
